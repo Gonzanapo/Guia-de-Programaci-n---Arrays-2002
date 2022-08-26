@@ -39,14 +39,20 @@ public class Ej2_Dias_Meses : MonoBehaviour
             mes += fecha[2];
             mes += fecha[3];
             int mesNumber = int.Parse(mes);
-            if( diaNumber > 0 && diaNumber <= 31 && mesNumber > 0 && mesNumber >=12)
+            if( diaNumber > 0 && diaNumber <= 31 && mesNumber > 0 && mesNumber<=12)
             {
-                fechaValida=true;
+                fechaValida = true;
+                Debug.Log("True");
+            }
+            else
+            {
+                Debug.Log("false");
             }
         }
         else
         {
             Debug.Log("El largo de la fecha es incorrecto");
+           
         }
 
         return (fechaValida);

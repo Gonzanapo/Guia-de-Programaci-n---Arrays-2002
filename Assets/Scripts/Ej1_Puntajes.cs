@@ -63,7 +63,7 @@ public class Ej1_Puntajes : MonoBehaviour
 
         foreach(int puntaje in puntajes)
         {
-            suma =+ puntaje;
+            suma += puntaje;
          
         }
 
